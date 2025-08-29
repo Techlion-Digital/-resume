@@ -1,9 +1,8 @@
 import { Component } from '@angular/core';
-import { RouterModule, RouterOutlet } from '@angular/router';
 
 @Component({
   selector: 'app-backdrop',
-  imports: [RouterOutlet, RouterModule],
+  imports: [],
   templateUrl: './backdrop.html',
   styleUrl: './backdrop.css'
 })

@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, OnInit, inject } from '@angular/core';
+
 
 @Component({
   selector: 'app-cover',
@@ -6,6 +7,9 @@ import { Component } from '@angular/core';
   templateUrl: './cover.html',
   styleUrl: './cover.css'
 })
-export class Cover {
-
+export class Cover implements OnInit {
+  
+  ngOnInit() {
+    
+  }
 }
