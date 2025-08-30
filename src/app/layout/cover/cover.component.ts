@@ -4,8 +4,8 @@ import { Component, OnInit, inject } from '@angular/core';
 @Component({
   selector: 'app-cover',
   imports: [],
-  templateUrl: './cover.html',
-  styleUrl: './cover.css'
+  templateUrl: './cover.component.html',
+  styleUrl: './cover.component.css'
 })
 export class Cover implements OnInit {
   
