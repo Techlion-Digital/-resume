@@ -1,0 +1,13 @@
+<section class="skill-shell">
+    <h1>UX Based UI</h1>
+
+    <nav class="tabs">
+        <a routerLink="design-systems" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }">Design Systems</a>
+        <a routerLink="interaction-design" routerLinkActive="active">Interaction Design</a>
+        <a routerLink="research" routerLinkActive="active">Research</a>
+    </nav>
+
+    <div class="we-content">
+        <router-outlet/>
+    </div>
+</section>

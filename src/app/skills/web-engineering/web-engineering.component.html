@@ -1,0 +1,13 @@
+<section class="skill-shell">
+    <h1>Web Engineering</h1>
+
+    <nav class="tabs">
+        <a routerLink="front-end" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }">Front End</a>
+        <a routerLink="back-end" routerLinkActive="active">Back End</a>
+        <a routerLink="devops" routerLinkActive="active">DevOps</a>
+    </nav>
+
+    <div class="we-content">
+        <router-outlet/>
+    </div>
+</section>

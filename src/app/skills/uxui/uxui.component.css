@@ -1,0 +1,36 @@
+.we-shell { 
+    padding: 1rem; 
+}
+
+.tabs {
+    display: flex;
+    gap: 1rem;
+    margin: 0 0 40px;
+    padding: 10px 0px; 
+}
+
+.tabs a {
+    text-decoration: none;
+    padding: .4rem .7rem;
+    border-radius: .5rem; 
+    color: #33213b;
+    transition:all 0.4s ease-in-out;
+    font-weight:bold;
+}
+
+.tabs a.active {
+    outline: 1px solid currentColor; 
+    background: #c9c3d1;
+}
+
+.tabs a:hover{
+    outline: 1px solid currentColor;
+}
+
+.tabs a.active:hover{
+    cursor:default;
+}
+
+h1{
+    margin-bottom:20px;
+}

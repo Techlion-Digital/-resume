@@ -1,0 +1,65 @@
+.title{
+    font-family: "am-tripoli", sans-serif;
+    font-weight: 400;
+    font-size:18px;
+    border-top:1px #655e6d solid;
+    border-bottom:1px #655e6d solid;
+    padding:10px 0px;
+    margin:40px 0px 0px !important;
+    display:block;
+
+}
+
+.rz2{
+    font-weight: 400;
+    font-family: "jaf-mashine", sans-serif;
+    color:#655e6d;
+    text-align:center !important;
+    display:block;
+    margin:5px 0 0 0px !important;
+    font-size:14px;
+    letter-spacing: 0px;
+}
+
+.rz2 span{
+    font-family: "jaf-mashine", sans-serif;
+    font-weight: 400;
+    font-size:30px;
+    font-style: normal;
+    display:inline-block;
+    vertical-align:-4px;
+}
+
+.cage img{
+    width:160px;
+    margin:0px auto;
+    display:block;
+}
+
+
+.dial-item {
+  text-decoration: none;
+  padding: 9px 14px 8px;
+  display: inline-block;
+  border-radius: 20px;
+  font-size: 13px;
+  font-family: "jaf-mashine", sans-serif;
+  display: block;
+  text-decoration: none;
+  font-weight: 200;
+  text-transform: uppercase;
+  -webkit-transition: all 0.4s ease;
+  -moz-transition: all 0.4s ease;
+  -ms-transition: all 0.4s ease;
+  -o-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+  margin-top: 14px;
+  cursor: pointer;
+  background: #33213b;
+  color: #fff;
+}
+
+.dial-item:hover {
+  background: #ceecc5;
+  color: #33213b;
+}

@@ -1,0 +1,13 @@
+<section class="skill-shell">
+    <h1>Data Analytics</h1>
+
+    <nav class="tabs">
+        <a routerLink="algorithms" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }">Algorithms</a>
+        <a routerLink="data-visualization" routerLinkActive="active">Data Visualization</a>
+        <a routerLink="data-storytelling" routerLinkActive="active">Data Storytelling</a>
+    </nav>
+
+    <div class="da-content">
+        <router-outlet/>
+    </div>
+</section>

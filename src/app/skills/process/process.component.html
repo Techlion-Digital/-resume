@@ -1,0 +1,13 @@
+<section class="skill-shell">
+    <h1>Process & Leadership</h1>
+
+    <nav class="tabs">
+        <a routerLink="agile" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }">Agile</a>
+        <a routerLink="sdlc" routerLinkActive="active">SDLC</a>
+        <a routerLink="culture" routerLinkActive="active">Culture</a>
+    </nav>
+
+    <div class="skill-content">
+        <router-outlet/>
+    </div>
+</section>

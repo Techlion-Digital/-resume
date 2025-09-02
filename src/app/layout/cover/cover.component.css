@@ -1,1 +1,19 @@
-.icon svg { width: 2334px; height: 2334px; }
+#coverContainer polygon{
+    fill: #c9c3d1;
+}
+
+#coverContainer{
+    opacity:1;
+    
+}
+
+:host {
+  display: block;            /* ensure it can fade */
+  opacity: 1;
+  transition: all 1s ease;
+}
+
+:host(.showtime) {
+  opacity: 0;
+  background:transparent !important;
+}

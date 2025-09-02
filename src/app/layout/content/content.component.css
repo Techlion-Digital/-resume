@@ -1,0 +1,71 @@
+.tagline{
+    font-family: "jaf-mashine", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    text-align: left;
+    width: 100%;
+    font-weight: 400;
+    top:-10px;
+    padding:20px;
+    box-sizing: border-box;
+    border-top:1px #c9c3d1 solid;
+    border-bottom:3px #655e6d solid;
+    background:#655e6d;
+    color:#c9c3d1;
+    font-size:14px;
+    position:fixed;
+}
+
+.tagline .small{
+    font-weight: 200;
+    font-family: "jaf-mashine", sans-serif;
+    vertical-align:-7px;
+    display:inline;
+}
+
+.tagline span{
+    font-family: "am-tripoli", sans-serif;
+    font-weight: 400;
+    font-size:56px;
+    font-style: normal;
+    display:inline-block;
+    vertical-align:-10px;
+    margin-right:20px;
+}
+
+#mainContent {
+    max-width: 1300px;
+    margin: 0 auto;
+    box-sizing: border-box;
+    background: transparent;
+    height:100%;
+    padding:60px 100px;
+}
+
+#mainContent h2{
+    font-family: "am-tripoli", sans-serif;
+    font-weight: 400;
+    font-size:48px;
+    text-decoration: underline;;
+    color:#655e6d;margin-top:120px;
+}
+
+#mainContent p {
+    font-weight: 400;
+    font-family: "jaf-mashine", sans-serif;
+    font-size: 22px;
+    line-height: 1.5;
+    margin: 40px 0px;;
+    color:#655e6d;
+}
+
+
+:host {
+  --sidebar-width: 340px;
+  --content-width: 100%;
+}
+
+#mainContent {
+  width: var(--content-width);
+  margin-left: calc((var(--sidebar-width) + (100% - var(--sidebar-width) - var(--content-width)) / 2 + 170px));
+}

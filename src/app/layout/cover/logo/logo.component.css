@@ -1,0 +1,24 @@
+#logoContainer{
+    position:fixed;
+    top:30%;
+    width:100%;
+}
+
+#logoContainer svg{
+    width:240px;
+    margin:0px auto;
+    display:block;
+}
+
+/* Lion fill mapping (with safe fallbacks) */
+.cls-6 { fill: var(--c-green,    #ceecc5); }   /* was #ceecc5 */
+.cls-3 { fill: var(--c-yellow,   #efeefd); }   /* was #efeefd */
+.cls-1 { fill: var(--c-blue,     #dac5ef); }   /* was #dac5ef */
+.cls-4 { fill: var(--c-purple,   #9d8cad); }   /* was #9d8cad */
+.cls-2,
+.cls-5 { fill: var(--c-purple2,  #746a82); }   /* .cls-2 was #655e6d, .cls-5 was #51495e (darker group) */
+.cls-8 { fill: var(--c-tanLight, #fdfefc); }   /* was #fdfefc */
+.cls-7 { fill: var(--c-tanDark,  #c1c1b2); }   /* was #c1c1b2 */
+
+/* smooth transitions */
+svg [class^="cls-"] { transition: fill .1s ease; }

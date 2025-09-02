@@ -14,13 +14,12 @@ export class Backdrop implements AfterViewInit, OnDestroy {
   @ViewChild('bgSvg', { static: false }) bgSvg?: ElementRef<SVGSVGElement>;
 
   // Twinkle tuning
-  private fps = 60;                 // tick rate
-  private perTick = 60;             // how many polygons per tick
-  private minOpacity = 0.15;        // never fully disappear
-  private maxOpacity = 1.0;         // max (we set <1 on twinkle; restore sets to 1)
-  private restoreDelayMin = 250;    // ms before we restore to 1
-  private restoreDelayMax = 800;   // ms (randomized per twinkle)
-
+  private fps = 120; 
+  private perTick = 10;
+  private minOpacity = 0.0;
+  private maxOpacity = 1.0;
+  private restoreDelayMin = 400;
+  private restoreDelayMax = 1000;
   private rafId: number | null = null; 
   private lastTick = 0;
 
