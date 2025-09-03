@@ -1,4 +1,7 @@
 <div id="mainContent">
     <app-left-sidebar></app-left-sidebar>
-    <router-outlet></router-outlet>
+    <div id="contentScroll">
+      <router-outlet></router-outlet>
+    </div>
+    <a class="back-to-top" (click)="scrollToTop()" title="Back to Top">↑</a>
 </div>

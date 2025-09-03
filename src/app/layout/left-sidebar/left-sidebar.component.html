@@ -4,10 +4,10 @@
     <h1 class="title">TECHLION DIGITAL</h1>
     <p class="rz2">By Robert Rzeznik</p>
     <div class="total-box">
-      <a routerLink="web-engineering" class="dial-item" id="trigger-WE">Web Engineering</a>
-      <a routerLink="data-analytics" class="dial-item" id="trigger-WE">Data Analytics</a>
-      <a routerLink="ux-ui" class="dial-item" id="trigger-WE">UX Based UI</a>
-      <a routerLink="process-engineering" class="dial-item" id="trigger-WE">Process Engineering</a>
+      <a [routerLink]="['/web-engineering']" (click)="scrollToContent()" class="dial-item">Web Engineering</a>
+      <a [routerLink]="['/data-analytics']" (click)="scrollToContent()" class="dial-item">Data Analytics</a>
+      <a [routerLink]="['/ux-ui']" (click)="scrollToContent()" class="dial-item">UX Based UI</a>
+      <a [routerLink]="['/process-engineering']" (click)="scrollToContent()" class="dial-item">Process Engineering</a>
     </div>
   </div>
 

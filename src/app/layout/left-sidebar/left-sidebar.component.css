@@ -63,3 +63,28 @@
   background: #ceecc5;
   color: #33213b;
 }
+
+@media screen and (max-height: 620px) {
+  .cage img{
+    width:110px;
+  }
+
+  .title{
+    margin-top:10px;
+    font-size:12px;
+    padding:3px 0px;
+  }
+
+  .rz2{
+    font-size:11px;
+  }
+
+  .total-box{
+    padding-top:20px;
+  }
+
+  .dial-item {
+    font-size: 10px;
+  }
+
+}

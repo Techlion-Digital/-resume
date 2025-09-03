@@ -67,5 +67,20 @@
 
 #mainContent {
   width: var(--content-width);
-  margin-left: calc((var(--sidebar-width) + (100% - var(--sidebar-width) - var(--content-width)) / 2 + 170px));
+}
+
+a.back-to-top{
+    position:fixed;
+    right:20px;
+    bottom:20px;
+    background:#655e6d;
+    color:#c9c3d1;
+    padding:10px 15px;
+    border-radius:50%;
+    text-decoration:none;
+    z-index:9998;
+}
+
+app-left-sidebar{
+    z-index:9999;
 }

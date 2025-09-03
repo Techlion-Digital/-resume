@@ -7,8 +7,8 @@ html {
   margin: 0;
   padding: 0;
   font-family: "jaf-mashine", sans-serif;
-  min-height: 460px;
-  min-width: 340px;
+  min-height: 500px !important;
+  min-width: 340px !important;
   height: 100%;
   width: 100%;
 }
@@ -223,38 +223,7 @@ ul.movement-bar {
   letter-spacing: 2px;
 }
 
-.btp {
-  position: fixed;
-  right: 20px;
-  bottom: 20px;
-  background: #33213b;
-  color: #fff !important;
-  font-size: 16px;
-  z-index: 999999;
-  opacity: 0;
-  display: inline-block;
-  font-family: 'forma-djr-display', sans-serif;
-  text-decoration: none !important;
-  text-transform: uppercase;
-  padding: 7px 15px 10px;
-  border-radius: 10px;
-  -webkit-transition: all 0.4s ease;
-  -moz-transition: all 0.4s ease;
-  -ms-transition: all 0.4s ease;
-  -o-transition: all 0.4s ease;
-  transition: all 0.4s ease;
-  pointer-events: none;
-  font-weight: 900;
-}
 
-.btp.show {
-  pointer-events: all;
-  opacity: 1;
-}
-
-.btp span {
-  margin-left: 10px;
-}
 
 .svg-bg svg {
   position: absolute;
@@ -714,12 +683,13 @@ ul.stats li span {
 
 div#bgContainer,
 div#coverContainer {
-  position: fixed;
-  top: -300px;
-  left: 0px;
-  width: 100%;
-  min-width: 1350px;
-  opacity: 0.85;
+    left: 0px;
+    width: 110%;
+    height:110% !important;
+    min-width: 1350px;
+    top:-300px;
+    opacity: 1;
+    position: relative;
 }
 
 .content-fade {
@@ -894,149 +864,6 @@ div#bgLeftContainer svg {
   transition: all 0.4s ease;
 }
 
-@media screen and (max-width: 1570px) {
-  #superHead a {
-    font-size: 18px;
-    margin-right: 7%;
-  }
-
-  .grid-corner {
-    padding-left: 80px;
-  }
-}
-
-@media screen and (max-width: 1364px) {
-  img#Rahb {
-    display: none;
-  }
-
-  #superHead a {
-    font-size: 16px;
-  }
-}
-
-/* MAIN MOBILE SWITCHEROO */
-@media screen and (max-width: 1280px) {
-  div#bgContainer,
-  div#coverContainer {
-    position: fixed;
-    top: 0;
-    left: -50%;
-    width: 200%;
-    margin-left: 0px;
-    min-width: auto;
-    opacity: 0.85;
-  }
-
-  #topText {
-    left: 0px;
-    top: -460px;
-    z-index: 9999999999999;
-    opacity: 0.5;
-    position: absolute;
-    top: 75px;
-  }
-
-  .movement-bar li {
-    display: block;
-    width: auto;
-    color: rgba(0, 0, 0, 0.8);
-  }
-
-  #topText.large-width {
-    top: 75px !important;
-  }
-
-  div#contentGrid {
-    padding-top: 0px;
-  }
-
-  h1.header {
-    font-size: 34px;
-    text-align: left;
-    margin-bottom: 20px;
-  }
-
-  .journal-description {
-    font-size: 26px;
-    line-height: 1.3em;
-  }
-
-  p.su-heed {
-    text-align: left;
-    margin-top: 10px;
-  }
-
-  #intro {
-    padding-top: 60px;
-  }
-
-  #contentGrid p,
-  #topText p {
-    font-size: 20px;
-  }
-
-  #superHead {
-    display: none;
-  }
-
-  div#cage-holder {
-    position: relative;
-    width: 100%;
-    top: 0;
-  }
-
-  #contentGrid,
-  #topText {
-    padding-left: 0 !important;
-  }
-
-  #intro,
-  .xp-point {
-    max-width: 100%;
-    width: 100%;
-  }
-
-  .intro-slide,
-  .resume-slide {
-    padding: 60px 7% 15% 7%;
-    height: auto !important;
-  }
-}
-
-/* FINISHING TOUCHES */
-@media screen and (max-height: 830px) {
-  img#Rahb {
-    width: 950px;
-  }
-}
-
-@media screen and (max-width: 600px) {
-  div#cage-holder {
-    width: 100%;
-  }
-
-  .menu-sep,
-  .contact-holder {
-    opacity: 0;
-    pointer-events: none;
-  }
-}
-
-@media screen and (max-height: 490px) {
-  .cage #techlion {
-    min-height: 200px;
-  }
-
-  .cage {
-    padding: 10px;
-  }
-
-  .title {
-    padding-top: 20px;
-  }
-}
-
 /* TEMP STYLES */
 .movement-bar {
   display: none !important;
@@ -1089,12 +916,12 @@ div#bgLeftContainer svg {
 }
 
 .tabs a.active {
-    outline: 1px solid currentColor; 
+    outline: 2px solid currentColor; 
     background: #c9c3d1;
 }
 
 .tabs a:hover{
-    outline: 1px solid currentColor;
+    outline: 2px solid currentColor;
 }
 
 .tabs a.active:hover{
@@ -1105,11 +932,79 @@ div#bgLeftContainer svg {
     padding: 1rem; 
 }
 
-.skill-shell h1{
-    margin-bottom:20px;
+.skill-shell h1 {
+    margin-bottom: 20px;
+    -webkit-text-stroke: #33213b;
+    -webkit-text-stroke-width: 2px;
+    color: #c9c3d1;
 }
 
 .lane{
     box-sizing: border-box;
     padding-left:340px;
 }
+
+#content{
+  box-sizing: border-box;
+  padding-left:340px;
+}
+
+/* RESPONSIVE STYLES */
+/* Vertical Mode */
+
+@media screen and (max-width: 1040px) {
+  app-left-sidebar{
+    width:100%;
+    display:block;
+    position:relative;
+  }
+
+  #content{
+    width:100%;
+    height:100%;
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+  }
+
+  div#cage-holder{
+    width:100%;
+    display:block;
+    position:relative !important;
+  }
+
+  #mainContent{
+    padding:0 !important;
+    margin:0;
+  }
+
+  .skill-shell {
+    max-width: 100%;
+    padding: 60px 20px;
+  }
+
+  .skill-shell h1{
+    font-size:38px;
+  }
+
+  .skill-categories ul li{
+    padding:20px;
+  }
+
+  html, body {
+    height: 100%;
+    overflow-y: auto;   /* ensure the window can scroll */
+  }
+
+  div#coverContainer, div#bgContainer {
+    top:-100px;
+    height:140% !important;
+    width:auto;
+  }
+
+  .tabs, .tabs a{
+    display:block !important;
+  }
+  
+
+} 

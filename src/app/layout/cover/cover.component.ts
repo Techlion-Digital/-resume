@@ -18,7 +18,7 @@ export class Cover implements AfterViewInit, OnDestroy {
   @HostBinding('class.showtime') get hostShow() { return this.showtime; }
 
   // Twinkle tuning
-  private fps = 120;
+  private fps = 60;
   private perTick = 10;
   private minOpacity = 0.0;
   private maxOpacity = 1.0;

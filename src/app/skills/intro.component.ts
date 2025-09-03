@@ -40,7 +40,8 @@ export class IntroComponent implements AfterViewInit, OnDestroy {
     'Kanban','Scrum', 'Dashboards','Visualization','Storytelling', 'Conversion', 'Accessibility',
     'Algorithms', 'Responsive', 'Debugging', 'Database', 'Cloud', 'Linux', 'MongoDB', 'Cassandra',
     'C#', 'HTML', 'CSS', 'JavaScript', 'PHP', 'Creative Cloud', 'Figma', 'Marketing', 'React', 'Single-SPA',
-    'Micro-Frontend'
+    'Micro-Frontend', 'Communication', 'Critical Thinking', 'Originality', 'Genuinity', 
+    'Interactivity', 'Animation', 'User Flow', 'Journey Mapping', 'eCommerce', 'Cyber Security'
   ];
 
   // knobs

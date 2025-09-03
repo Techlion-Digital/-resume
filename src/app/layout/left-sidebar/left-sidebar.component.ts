@@ -94,6 +94,15 @@ export class LeftSidebar {
     }
   }
 
+  scrollToContent(){
+    setTimeout(() => {
+      const contentScroll = document.getElementById('contentScroll') as HTMLElement;
+      if (contentScroll) {
+        contentScroll.scrollIntoView({ behavior: 'smooth' });
+      }
+    }, 100);
+  }
+
   ngOnDestroy(): void {
     if (this.rafId != null) this.cAF(this.rafId);
     for (const poly of this.polygons) {
