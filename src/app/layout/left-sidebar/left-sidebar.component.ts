@@ -95,12 +95,14 @@ export class LeftSidebar {
   }
 
   scrollToContent(){
-    setTimeout(() => {
-      const contentScroll = document.getElementById('contentScroll') as HTMLElement;
-      if (contentScroll) {
-        contentScroll.scrollIntoView({ behavior: 'smooth' });
-      }
-    }, 100);
+    if (window.innerWidth < 1040) {
+      setTimeout(() => {
+        const contentScroll = document.getElementById('contentScroll') as HTMLElement;
+        if (contentScroll) {
+          contentScroll.scrollIntoView({ behavior: 'smooth' });
+        }
+      }, 100);
+    }
   }
 
   ngOnDestroy(): void {

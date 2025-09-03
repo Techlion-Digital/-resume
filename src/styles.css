@@ -949,10 +949,18 @@ div#bgLeftContainer svg {
   padding-left:340px;
 }
 
+#contentScroll{
+  padding-top:40px;
+}
+
 /* RESPONSIVE STYLES */
 /* Vertical Mode */
 
 @media screen and (max-width: 1040px) {
+  #contentScroll{
+    padding-top:10px;
+  }
+
   app-left-sidebar{
     width:100%;
     display:block;
