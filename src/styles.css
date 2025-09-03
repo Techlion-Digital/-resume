@@ -934,9 +934,7 @@ div#bgLeftContainer svg {
 
 .skill-shell h1 {
     margin-bottom: 20px;
-    -webkit-text-stroke: #33213b;
-    -webkit-text-stroke-width: 2px;
-    color: #c9c3d1;
+    color: #33213b;
 }
 
 .lane{
